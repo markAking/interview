@@ -1,5 +1,5 @@
 # Talkspace Software Developer Interview
-## Setup dev environment
+## Dev environment
 
 - Fork this project
 
