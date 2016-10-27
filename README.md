@@ -13,7 +13,7 @@
 
 - have mysql server up and running in your local vagrant or outside
 
-- install sketch (https://www.sketchapp.com) in order to open the design file
+- install sketch (https://www.sketchapp.com) in order to open the design file or you can open pdf version of the design.
 
 - you can right click to see css attributes of any element in sketch but they are not always 100% correct.
 
