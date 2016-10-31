@@ -1,0 +1,55 @@
+<div ng-controller="MainCtrl as ctrl">
+  <div class="row">
+    <div class="profile-edit">
+      <h2 class="left">Profile <span class="circle">?</span></h2>
+      <edit-profile-link on-edit="editmode(true)" on-cancel="editmode(false)"></edit-profile-link>
+    </div>
+  </div>
+  <div class="profile">
+    <div class="row">
+      <div class="col-md-2">pic</div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-2">
+            <h3>First Name</h3>
+            <h4>{{user[0].firstname}}</h4>
+          </div>
+          <div class="col-md-2">
+            <h3>Last Name</h3>
+            <h4>{{user[0].lastname}}</h4>
+          </div>
+        </div>
+        <div class="row" ng-switch="edit_mode">
+          <div class="col-md-8">
+            <label>Bio</label>
+            <div ng-switch-when="false">{{user[0].bio}}</div>
+            <textarea ng-switch-when="true" rows="10" ng-model="user[0].bio" >{{user[0].bio}}</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"><h3>Website</h3></div>
+      <div class="col-md-8"><a href="{{user[0].site}}">{{user[0].site}}</a></div>
+    </div>
+    <div class="row" ng-switch="edit_mode">
+        <div class="col-md-2"><h3>Information</h3></div>
+        <div class="col-md-3">
+          <h3>Phone Number</h3>
+          <p ng-switch-when="false">{{user[0].phone}}</p>
+          <input ng-switch-when="true" type="text" ng-model="user[0].phone" value="{{user[0].phone}}">
+        </div>
+        <div class="col-md-3">
+          <h3>Slack Name</h3>
+          <p ng-switch-when="false">{{user[0].slack}}</p>
+          <input ng-switch-when="true" type="text" ng-model="user[0].slack" value="{{user[0].slack}}">
+        </div>
+        <div class="col-md-3">
+          <h3>email</h3>
+          <p ng-switch-when="false">{{user[0].email}}</p>
+          <input ng-switch-when="true" type="text" ng-model="user[0].email" value="{{user[0].email}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

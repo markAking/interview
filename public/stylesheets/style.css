@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #65cbcb;
+  text-decoration: none;
+}
+h1{
+  color: #65cbcb;
+  font-size: 24px;
+  font-weight: bold;
+}
+h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+h2 .circle{
+  display: inline-block;
+  border-radius: 50%;
+  background: #65cbcb;
+  color: #FFF;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+}
+.blue {
+  color: #65cbcb;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.profile-edit h2{
+  margin: 0;
+}
+.profile-edit{
+  margin: 20px 0 10px 20px;
+}
+.profile-edit button{
+  margin-left: 5px;
+  font-size: 20px;
+  border: 1px solid #65cbcb !important;
+  padding: 2px;
+  width: 150px;
+}
+.cancel.btn-secondary{
+  color: #65cbcb;
+  background: none;
+}
+.save.btn-primary{
+  background: #65cbcb;
+}
+.edit{
+  cursor: pointer;
+}
+textarea{
+  display: block;
+  width: 100%;
+}
+input{
+  width: 100%;
+}
