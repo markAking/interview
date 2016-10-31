@@ -24,6 +24,15 @@ h2 .circle{
   width: 20px;
   text-align: center;
 }
+h3{
+  color: #a7a7a7;
+  font-size: 12px;
+}
+h4{
+  color: #2b3c3b;
+  font-size: 20px;
+  font-weight: bold;
+}
 .blue {
   color: #65cbcb;
 }
@@ -38,6 +47,7 @@ h2 .circle{
 }
 .profile-edit{
   margin: 20px 0 10px 20px;
+  overflow: hidden;
 }
 .profile-edit button{
   margin-left: 5px;
@@ -56,10 +66,45 @@ h2 .circle{
 .edit{
   cursor: pointer;
 }
+.pic{
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  width: 90%;
+  margin: 20px 0 10px;
+}
+.link{
+  margin: 20px 0 10px;
+  display: inline-block;
+}
+.bio{
+  padding: 10px;
+  color: #ccc;
+}
 textarea{
   display: block;
   width: 100%;
 }
 input{
   width: 100%;
+}
+.profile{
+  background:  #fbfbfb;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.row.offset{
+  margin: 0;
+}
+@media (min-width: 992px){
+  .profile{
+    padding: 30px;
+  }
+}
+p{
+  border-radius: 3px;
+  background: #e8e8e8;
+  color: #ccc;
+  padding: 5px;
 }
